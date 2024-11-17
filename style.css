@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Main Container */
+#cont {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Input Field Styling */
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+input[type="number"]::placeholder {
+    color: #aaa;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f39c12;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #d35400;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Dice Results Styling */
+#dicere {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1c40f;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Dice Images Styling */
+#dicimg img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#dicimg img:hover {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    #cont {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    #dicimg img {
+        width: 40px;
+        height: 40px;
+    }
+}
